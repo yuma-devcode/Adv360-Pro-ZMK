@@ -90,11 +90,11 @@
 
         shift {
             bindings = <
-&kp TILDE  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT  &trans                                      &trans  &kp AMPERSAND  &kp SQT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &kp EQUAL
-&trans     &trans           &trans             &trans    &trans      &trans       &trans                                      &trans  &trans         &trans   &trans                &trans                 &trans        &kp GRAVE
-&trans     &trans           &trans             &trans    &trans      &trans       &trans  &trans  &trans      &trans  &trans  &trans  &trans         &trans   &trans                &trans                 &kp PLUS      &kp ASTERISK
-&trans     &trans           &trans             &trans    &trans      &trans                       &trans      &trans                  &trans         &trans   &trans                &trans                 &kp QUESTION  &trans
-&trans     &trans           &kp PIPE           &trans    &trans                   &trans  &trans  &trans      &trans  &trans  &trans                 &trans   &trans                &trans                 &trans        &trans
+&kp TILDE  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT  &trans                                      &trans  &kp AMPERSAND  &kp SQT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans           &kp EQUAL
+&trans     &trans           &trans             &trans    &trans      &trans       &trans                                      &trans  &trans         &trans   &trans                &trans                 &trans           &kp GRAVE
+&trans     &trans           &trans             &trans    &trans      &trans       &trans  &trans  &trans      &trans  &trans  &trans  &trans         &trans   &trans                &trans                 &kp PLUS         &kp ASTERISK
+&trans     &trans           &trans             &trans    &trans      &trans                       &trans      &trans                  &trans         &trans   &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION     &trans
+&trans     &trans           &kp PIPE           &trans    &trans                   &trans  &trans  &trans      &trans  &trans  &trans                 &trans   &trans                &kp LEFT_BRACE         &kp RIGHT_BRACE  &trans
             >;
         };
     };
