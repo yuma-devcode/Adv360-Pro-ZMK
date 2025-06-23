@@ -21,14 +21,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        shift {
-            bindings = <&mo 8>;
-            key-positions = <2>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
