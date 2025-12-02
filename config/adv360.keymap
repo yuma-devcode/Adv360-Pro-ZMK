@@ -105,7 +105,7 @@
             bindings = <
 &kp ESC    &kp N1     &kp N2         &kp N3          &kp N4     &kp N5  &kp N6                                                                    &kp N7     &kp N6  &kp N7        &kp N8     &kp N9            &kp N0             &kp EQUAL
 &kp TAB    &kp Q      &kp W          &kp E           &kp R      &kp T   &tog 0                                                                    &trans     &kp Y   &kp U         &kp I      &kp O             &kp P              &kp AT_SIGN
-&kp LCTRL  &kp A      &kp S          &kp D           &kp F      &kp G   &tog 9         &kp LEFT_ALT  &kp LEFT_WIN      &mkp LCLK       &mkp RCLK  &trans     &kp H   &kp J         &kp K      &kp L             &kp SEMICOLON      &kp COLON
+&kp LCTRL  &kp A      &kp S          &kp D           &kp F      &kp G   &tog 9         &kp LEFT_WIN  &kp LEFT_ALT      &mkp LCLK       &mkp RCLK  &trans     &kp H   &kp J         &kp K      &kp L             &kp SEMICOLON      &kp COLON
 &kp LSHFT  &kp Z      &kp X          &kp C           &kp V      &kp B                                &kp UNDER         &trans                                &kp N   &kp M         &kp COMMA  &kp PERIOD        &kp SLASH          &trans
 &trans     &kp CARET  &kp BACKSLASH  &kp LEFT_ARROW  &kp RIGHT          &kp BACKSPACE  &kp DEL       &trans            &kp LS(ESCAPE)  &kp ENTER  &kp SPACE          &kp UP_ARROW  &kp DOWN   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
             >;
