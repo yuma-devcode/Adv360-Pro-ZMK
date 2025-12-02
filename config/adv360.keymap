@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -102,11 +103,11 @@
 
         windows {
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3          &kp N4     &kp N5  &kp N6                                                                             &kp N7  &kp N6  &kp N7        &kp N8     &kp N9            &kp N0             &kp EQUAL
-&kp TAB    &kp Q   &kp W   &kp E           &kp R      &kp T   &trans                                                                             &trans  &kp Y   &kp U         &kp I      &kp O             &kp P              &kp BSLH
-&kp LCTRL  &kp A   &kp S   &kp D           &kp F      &kp G   &trans         &kp LEFT_ALT  &kp LEFT_WIN      &trans                   &trans     &trans  &kp H   &kp J         &kp K      &kp L             &kp SEMICOLON      &kp COLON
-&kp LSHFT  &kp Z   &kp X   &kp C           &kp V      &kp B                                &kp UNDER         &trans                                      &kp N   &kp M         &kp COMMA  &kp PERIOD        &kp SLASH          &trans
-&trans     &trans  &trans  &kp LEFT_ARROW  &kp RIGHT          &kp BACKSPACE  &trans        &trans            &kp LANG_ZENKAKUHANKAKU  &kp ENTER  &trans          &kp UP_ARROW  &kp DOWN   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&kp ESC    &kp N1     &kp N2         &kp N3          &kp N4     &kp N5  &kp N6                                                                    &kp N7     &kp N6  &kp N7        &kp N8     &kp N9            &kp N0             &kp EQUAL
+&kp TAB    &kp Q      &kp W          &kp E           &kp R      &kp T   &trans                                                                    &trans     &kp Y   &kp U         &kp I      &kp O             &kp P              &kp AT_SIGN
+&kp LCTRL  &kp A      &kp S          &kp D           &kp F      &kp G   &trans         &kp LEFT_ALT  &kp LEFT_WIN      &mkp LCLK       &mkp RCLK  &trans     &kp H   &kp J         &kp K      &kp L             &kp SEMICOLON      &kp COLON
+&kp LSHFT  &kp Z      &kp X          &kp C           &kp V      &kp B                                &kp UNDER         &trans                                &kp N   &kp M         &kp COMMA  &kp PERIOD        &kp SLASH          &trans
+&trans     &kp CARET  &kp BACKSLASH  &kp LEFT_ARROW  &kp RIGHT          &kp BACKSPACE  &kp DEL       &trans            &kp LS(ESCAPE)  &kp ENTER  &kp SPACE          &kp UP_ARROW  &kp DOWN   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
             >;
         };
     };
