@@ -28,7 +28,7 @@
         leftmove: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_WIN &kp LEFT>, <&macro_press>;
+            bindings = <&kp LCTRL &kp LEFT_WIN &kp LEFT>, <&macro_tap>;
 
             label = "NEW_MACRO";
         };
@@ -36,7 +36,7 @@
         rightmove: right_move {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_WIN &kp RIGHT>, <&macro_press>;
+            bindings = <&kp LCTRL &kp LEFT_WIN &kp RIGHT>, <&macro_tap>;
 
             label = "RIGHT_MOVE";
         };
@@ -89,11 +89,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4     &kp F5      &kp F6  &tog 3                                      &mo 5   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans     &trans      &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans     &trans      &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans     &trans      &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &leftmove  &rightmove          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4     &kp F5      &kp F6  &tog 3                                      &mo 5   &kp F7          &kp F8          &kp F9        &kp F10          &kp F11  &kp F12
+&trans  &trans  &trans  &trans     &trans      &trans  &none                                       &none   &trans          &trans          &trans        &trans           &trans   &trans
+&trans  &trans  &trans  &trans     &trans      &trans  &none   &trans  &trans      &trans  &trans  &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans   &trans
+&trans  &trans  &trans  &trans     &trans      &trans                  &trans      &trans                  &trans          &trans          &trans        &trans           &trans   &trans
+&trans  &trans  &trans  &leftmove  &rightmove          &trans  &trans  &trans      &trans  &trans  &trans                  &trans          &trans        &trans           &trans   &trans
             >;
         };
 
