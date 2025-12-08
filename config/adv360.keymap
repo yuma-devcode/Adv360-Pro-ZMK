@@ -28,14 +28,16 @@
         leftmove: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_WIN &kp LEFT>;
+            bindings = <&kp LCTRL &kp LEFT_WIN &kp LEFT>, <&macro_press>;
+
             label = "NEW_MACRO";
         };
 
         rightmove: right_move {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_WIN &kp RIGHT>;
+            bindings = <&kp LCTRL &kp LEFT_WIN &kp RIGHT>, <&macro_press>;
+
             label = "RIGHT_MOVE";
         };
     };
