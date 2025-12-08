@@ -28,7 +28,7 @@
         leftmove: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_WIN &kp LEFT>, <&macro_tap>;
+            bindings = <&macro_tap>, <&kp LCTRL &kp LEFT_WIN &kp LEFT>;
 
             label = "NEW_MACRO";
         };
@@ -36,7 +36,7 @@
         rightmove: right_move {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_WIN &kp RIGHT>, <&macro_tap>;
+            bindings = <&macro_tap>, <&kp LCTRL &kp LEFT_WIN &kp RIGHT>;
 
             label = "RIGHT_MOVE";
         };
